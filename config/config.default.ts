@@ -12,7 +12,6 @@ export default (appInfo: EggAppInfo) => {
       enable: false, // 通过 header 传递 CSRF token 的默认字段为 x-csrf-token
       ignoreJSON: true,
     },
-    domainWhiteList: ['http://localhost:8080'],
   };
 
   // add your egg config in here

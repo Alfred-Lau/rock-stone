@@ -14,3 +14,24 @@ npx sequelize db:migrate
 # 可以通过 `db:migrate:undo:all` 回退到初始状态
 # npx sequelize db:migrate:undo:all
 ```
+
+5. egg 项目部署
+
+- 参考链接：https://eggjs.org/zh-cn/core/deployment.html
+
+```bash
+npm install --production
+tar -zcvf ../release.tgz .
+npm i egg-scripts --save
+```
+
+6. egg 项目的 release 包 是直接 和 依赖打在一起的，不需要重新安装依赖，可以考虑进化到 docker
+
+```bash
+tar zxvf release.tgz -C /root/project/backend
+
+```
+
+7. rds 在生产环境，需要使用外网链接串
+
+8. netstat -nltp

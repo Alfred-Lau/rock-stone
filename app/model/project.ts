@@ -1,6 +1,6 @@
 /* User Model */
 
-export default (app) => {
+export default app => {
   const { STRING, INTEGER, DATE } = app.Sequelize;
 
   const User = app.model.define('projects', {
