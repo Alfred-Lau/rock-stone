@@ -35,3 +35,6 @@ tar zxvf release.tgz -C /root/project/backend
 7. rds 在生产环境，需要使用外网链接串
 
 8. netstat -nltp
+
+9. ps -ef | grep nginx
+
